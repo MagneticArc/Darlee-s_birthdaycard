@@ -1053,11 +1053,6 @@
             goToNextPage();
         });
 
-        // 同时保留卡片点击（防止事件冲突）
-        cardContainer.addEventListener('click', function(event) {
-            event.stopPropagation(); // 阻止事件冒泡，避免重复触发
-        });
-
         document.addEventListener('keydown', function(event) {
             if (event.key === 'ArrowUp' || event.key === ' ' || event.key === 'ArrowRight') {
                 goToNextPage();
@@ -1069,4 +1064,5 @@
         });
     </script>
 </body>
+
 </html>
